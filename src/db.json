@@ -1,18 +1,74 @@
 {
   "contacts": [
     {
-      "firstName": "Mike",
-      "lastName": "Mike",
-      "phoneNumber": "123123",
-      "email": "mike@onet.pl",
-      "id": 4
-    },
-    {
       "firstName": "Artur",
       "lastName": "Zielinski",
       "phoneNumber": "891213",
       "email": "zielak@wp.pl",
       "id": 5
+    },
+    {
+      "firstName": "Krzysztof",
+      "lastName": "Burczyk",
+      "phoneNumber": "45632456",
+      "email": "nuro@yahoo.com",
+      "id": 6
+    },
+    {
+      "firstName": "Stanisław",
+      "lastName": "Andrzejewski",
+      "phoneNumber": "00256486",
+      "email": "andrew@onet.com",
+      "id": 7
+    },
+    {
+      "firstName": "Bartosz",
+      "lastName": "Dziamian",
+      "phoneNumber": "78172368",
+      "email": "dziemu@wp.pl",
+      "id": 9
+    },
+    {
+      "firstName": "Henryk",
+      "lastName": "Kaniewski",
+      "phoneNumber": "123123123",
+      "email": "kaniek@mail.com",
+      "id": 10
+    },
+    {
+      "firstName": "Władysław",
+      "lastName": "Cieciora",
+      "phoneNumber": "888123123",
+      "email": "cieciu@gmail.pl",
+      "id": 11
+    },
+    {
+      "firstName": "Władek",
+      "lastName": "Cieciora",
+      "phoneNumber": "22212312",
+      "email": "cieciora@wp.pl",
+      "id": 12
+    },
+    {
+      "firstName": "Edek",
+      "lastName": "Kredka",
+      "phoneNumber": "123",
+      "email": "edek@gmail.com",
+      "id": 13
+    },
+    {
+      "firstName": "Jacek",
+      "lastName": "Przypadek",
+      "phoneNumber": "777666555",
+      "email": "jacek@placek.pl",
+      "id": 14
+    },
+    {
+      "firstName": "Irek",
+      "lastName": "Wrona",
+      "phoneNumber": "888777555",
+      "email": "iros@radio.com",
+      "id": 15
     }
   ]
 }

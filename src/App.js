@@ -17,19 +17,38 @@ class App extends Component {
         return results.json()
       })
       .then(data => {
-        const contactList = data.map(contact => contact);
+        const contactList = data.sort(this.sortContacts).map(contact => contact);
         this.setState({
           contacts: contactList
         });
       });
   };
 
+  sortContacts = (contactA, contactB) => {
+    if (contactA.lastName < contactB.lastName) {
+      return -1;
+    } else if (contactA.lastName > contactB.lastName) {
+      return 1;
+    }
+    return 0;
+  };
+
   componentDidMount() {
     this.getContacts()
   }
 
+  clearInputs = () => {
+    this.setState({
+      firstName: '',
+      lastName: '',
+      phoneNumber: '',
+      email: ''
+    })
+  };
+
   addContact = (event) => {
     event.preventDefault();
+    this.clearInputs();
     const newContact = {
       firstName: this.state.firstName,
       lastName: this.state.lastName,
@@ -45,6 +64,7 @@ class App extends Component {
         }
       }
     ).then(this.getContacts)
+
   };
 
   removeContact = id => {
