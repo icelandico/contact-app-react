@@ -13,6 +13,27 @@
       "lastName": "Flinstone",
       "phoneNumber": "120-890-023",
       "email": "fred@mail.com"
+    },
+    {
+      "firstName": "Add",
+      "lastName": "Me",
+      "phoneNumber": "123",
+      "email": "as",
+      "id": 3
+    },
+    {
+      "firstName": "Filip",
+      "lastName": "Drugi",
+      "phoneNumber": "111555111",
+      "email": "mail@wp.pl",
+      "id": 4
+    },
+    {
+      "firstName": "Hello",
+      "lastName": "Its",
+      "phoneNumber": "6662331",
+      "email": "another@mail.com",
+      "id": 5
     }
   ]
 }
