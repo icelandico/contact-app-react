@@ -1,18 +1,42 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+
+  state = {
+    contacts: []
+  };
+
+  componentDidMount() {
+    fetch(`http://localhost:3000/contacts`)
+      .then(results => {
+        return results.json();
+      }).then(data => {
+        const contactList = data.map(contact => contact);
+        this.setState({
+          contacts: contactList
+        });
+      });
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <h1>Contact App</h1>
+        <ul>
+          {this.state.contacts.map(contact => {
+            return (
+              <div>
+                <li key={contact.id}>
+                  <p>{contact.firstName} {contact.lastName}</p>
+                  <p>{contact.phoneNumber}</p>
+                  <p>{contact.email}</p>
+                </li>
+              </div>
+            )
+          })}
+
+        </ul>
       </div>
     );
   }
