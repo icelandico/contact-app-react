@@ -11,8 +11,6 @@ class App extends Component {
     email: ''
   };
 
-
-
   componentDidMount() {
     fetch(`http://localhost:3000/contacts`)
       .then(results => {
@@ -32,7 +30,7 @@ class App extends Component {
       lastName: this.state.lastName,
       phoneNumber: this.state.phoneNumber,
       email: this.state.email
-    }
+    };
     fetch(
       'http://localhost:3000/contacts', {
         method: 'POST',
