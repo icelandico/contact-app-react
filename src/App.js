@@ -11,7 +11,7 @@ class App extends Component {
     email: ''
   };
 
-  componentDidMount() {
+  getContacts = () => {
     fetch(`http://localhost:3000/contacts`)
       .then(results => {
         return results.json()
@@ -22,9 +22,14 @@ class App extends Component {
           contacts: contactList
         });
       });
+  };
+
+  componentDidMount() {
+    this.getContacts()
   }
 
-  addContact = () => {
+  addContact = (event) => {
+    event.preventDefault();
     const newContact = {
       firstName: this.state.firstName,
       lastName: this.state.lastName,
@@ -39,7 +44,18 @@ class App extends Component {
           'Content-type': 'application/json'
         }
       }
-    )
+    ).then(this.getContacts)
+  };
+
+  removeContact = id => {
+    fetch(
+      `http://localhost:3000/contacts/` + id, {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      }
+    ).then(this.getContacts)
   };
 
   render() {
@@ -93,6 +109,7 @@ class App extends Component {
                   <p>{contact.firstName} {contact.lastName}</p>
                   <p>{contact.phoneNumber}</p>
                   <p>{contact.email}</p>
+                  <button onClick={() => this.removeContact(contact.id)}>Remove</button>
                 </li>
               </div>
             )

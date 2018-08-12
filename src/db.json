@@ -1,38 +1,17 @@
 {
   "contacts": [
     {
-      "id": 1,
-      "firstName": "Sebastian",
-      "lastName": "Kreft",
-      "phoneNumber": "500-600-700",
-      "email": "seba@mail.com"
-    },
-    {
-      "id": 2,
-      "firstName": "Fred",
-      "lastName": "Flinstone",
-      "phoneNumber": "120-890-023",
-      "email": "fred@mail.com"
-    },
-    {
-      "firstName": "Add",
-      "lastName": "Me",
-      "phoneNumber": "123",
-      "email": "as",
-      "id": 3
-    },
-    {
-      "firstName": "Filip",
-      "lastName": "Drugi",
-      "phoneNumber": "111555111",
-      "email": "mail@wp.pl",
+      "firstName": "Mike",
+      "lastName": "Mike",
+      "phoneNumber": "123123",
+      "email": "mike@onet.pl",
       "id": 4
     },
     {
-      "firstName": "Hello",
-      "lastName": "Its",
-      "phoneNumber": "6662331",
-      "email": "another@mail.com",
+      "firstName": "Artur",
+      "lastName": "Zielinski",
+      "phoneNumber": "891213",
+      "email": "zielak@wp.pl",
       "id": 5
     }
   ]
