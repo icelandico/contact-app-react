@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import EditForm from '../EditForm/EditForm'
 
 class App extends Component {
 
@@ -8,7 +9,8 @@ class App extends Component {
     firstName: '',
     lastName: '',
     phoneNumber: '',
-    email: ''
+    email: '',
+    editVisibles: {}
   };
 
   getContacts = () => {
@@ -25,9 +27,9 @@ class App extends Component {
   };
 
   sortContacts = (contactA, contactB) => {
-    if (contactA.lastName < contactB.lastName) {
+    if (contactA.lastName.toLowerCase() < contactB.lastName.toLowerCase()) {
       return -1;
-    } else if (contactA.lastName > contactB.lastName) {
+    } else if (contactA.lastName.toLowerCase() > contactB.lastName.toLowerCase()) {
       return 1;
     }
     return 0;
@@ -78,7 +80,14 @@ class App extends Component {
     ).then(this.getContacts)
   };
 
+  showEditDiv = (id) => {
+    this.setState( prevState => ({
+      editVisibles: { ...prevState.editVisibles, [id]: !prevState.editVisibles[id] }
+    }))
+  };
+
   render() {
+
     return (
       <div className="App">
         <h1>Contact App</h1>
@@ -130,6 +139,15 @@ class App extends Component {
                   <p>{contact.phoneNumber}</p>
                   <p>{contact.email}</p>
                   <button onClick={() => this.removeContact(contact.id)}>Remove</button>
+                  <button onClick={() => this.showEditDiv(contact.id)}>Edit</button>
+                  <div key={contact.id} className={`edit-form ${!this.state.editVisibles[contact.id] ? "unvisible" : "visible"}`}>
+                    <p>This is edit form</p>
+                    <EditForm firstName={contact.firstName}
+                              lastName={contact.lastName}
+                              phoneNumber={contact.phoneNumber}
+                              email={contact.email}
+                    />
+                  </div>
                 </li>
               </div>
             )

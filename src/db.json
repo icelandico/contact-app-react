@@ -8,13 +8,6 @@
       "id": 5
     },
     {
-      "firstName": "Krzysztof",
-      "lastName": "Burczyk",
-      "phoneNumber": "45632456",
-      "email": "nuro@yahoo.com",
-      "id": 6
-    },
-    {
       "firstName": "Stanisław",
       "lastName": "Andrzejewski",
       "phoneNumber": "00256486",
@@ -36,13 +29,6 @@
       "id": 10
     },
     {
-      "firstName": "Władysław",
-      "lastName": "Cieciora",
-      "phoneNumber": "888123123",
-      "email": "cieciu@gmail.pl",
-      "id": 11
-    },
-    {
       "firstName": "Władek",
       "lastName": "Cieciora",
       "phoneNumber": "22212312",
@@ -57,18 +43,32 @@
       "id": 13
     },
     {
-      "firstName": "Jacek",
-      "lastName": "Przypadek",
-      "phoneNumber": "777666555",
-      "email": "jacek@placek.pl",
-      "id": 14
-    },
-    {
       "firstName": "Irek",
       "lastName": "Wrona",
       "phoneNumber": "888777555",
       "email": "iros@radio.com",
       "id": 15
+    },
+    {
+      "firstName": "Halina",
+      "lastName": "Kamola",
+      "phoneNumber": "8881238123",
+      "email": "kami@url.pl",
+      "id": 16
+    },
+    {
+      "firstName": "Felek",
+      "lastName": "Pacibszuch",
+      "phoneNumber": "456789123",
+      "email": "pasiek@pasi.pl",
+      "id": 17
+    },
+    {
+      "firstName": "Mariusz",
+      "lastName": "Ancymon",
+      "phoneNumber": "123321",
+      "email": "hhh@wp.pl",
+      "id": 18
     }
   ]
 }
