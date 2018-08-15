@@ -66,7 +66,6 @@ class App extends Component {
         }
       }
     ).then(this.getContacts)
-
   };
 
   removeContact = id => {
@@ -146,6 +145,8 @@ class App extends Component {
                               lastName={contact.lastName}
                               phoneNumber={contact.phoneNumber}
                               email={contact.email}
+                              id={contact.id}
+                              getContacts={this.getContacts}
                     />
                   </div>
                 </li>

@@ -10,11 +10,33 @@ class EditForm extends Component {
     email: this.props.email,
   };
 
+  componentDidMount() {
+    this.props.getContacts()
+  }
 
+  editContact = (event) => {
+    event.preventDefault();
+    const updatedContact = {
+      firstName: this.state.firstName,
+      lastName: this.state.lastName,
+      phoneNumber: this.state.phoneNumber,
+      email: this.state.email
+    };
+    fetch(
+      'http://localhost:3000/contacts/' + this.props.id, {
+        method: 'PATCH',
+        body: JSON.stringify(updatedContact),
+        headers: {
+          'Content-type': 'application/json'
+        }
+      }
+    ).then(this.props.getContacts)
+  };
 
   render() {
     return (
       <div>
+        <form onSubmit={this.editContact}>
         <input
           type="text"
           placeholder="First Name"
@@ -52,6 +74,7 @@ class EditForm extends Component {
         />
 
         <button>Save Edited</button>
+        </form>
       </div>
     )
   }

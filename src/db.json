@@ -8,13 +8,6 @@
       "id": 5
     },
     {
-      "firstName": "Stanisław",
-      "lastName": "Andrzejewski",
-      "phoneNumber": "00256486",
-      "email": "andrew@onet.com",
-      "id": 7
-    },
-    {
       "firstName": "Bartosz",
       "lastName": "Dziamian",
       "phoneNumber": "78172368",
@@ -37,7 +30,7 @@
     },
     {
       "firstName": "Edek",
-      "lastName": "Kredka",
+      "lastName": "Kulson",
       "phoneNumber": "123",
       "email": "edek@gmail.com",
       "id": 13
@@ -51,14 +44,14 @@
     },
     {
       "firstName": "Halina",
-      "lastName": "Kamola",
+      "lastName": "Konownono",
       "phoneNumber": "8881238123",
       "email": "kami@url.pl",
       "id": 16
     },
     {
       "firstName": "Felek",
-      "lastName": "Pacibszuch",
+      "lastName": "Zacibszuch",
       "phoneNumber": "456789123",
       "email": "pasiek@pasi.pl",
       "id": 17
