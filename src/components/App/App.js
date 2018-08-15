@@ -147,6 +147,7 @@ class App extends Component {
                               email={contact.email}
                               id={contact.id}
                               getContacts={this.getContacts}
+                              showHideEditForm={this.showEditDiv}
                     />
                   </div>
                 </li>

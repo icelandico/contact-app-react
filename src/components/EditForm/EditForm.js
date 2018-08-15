@@ -16,6 +16,7 @@ class EditForm extends Component {
 
   editContact = (event) => {
     event.preventDefault();
+    this.props.showHideEditForm(this.props.id)
     const updatedContact = {
       firstName: this.state.firstName,
       lastName: this.state.lastName,

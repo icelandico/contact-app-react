@@ -16,14 +16,14 @@
     },
     {
       "firstName": "Henryk",
-      "lastName": "Kaniewski",
-      "phoneNumber": "123123123",
+      "lastName": "Arcyważny",
+      "phoneNumber": "98123",
       "email": "kaniek@mail.com",
       "id": 10
     },
     {
       "firstName": "Władek",
-      "lastName": "Cieciora",
+      "lastName": "Yanusz",
       "phoneNumber": "22212312",
       "email": "cieciora@wp.pl",
       "id": 12
@@ -55,13 +55,6 @@
       "phoneNumber": "456789123",
       "email": "pasiek@pasi.pl",
       "id": 17
-    },
-    {
-      "firstName": "Mariusz",
-      "lastName": "Ancymon",
-      "phoneNumber": "123321",
-      "email": "hhh@wp.pl",
-      "id": 18
     }
   ]
 }
