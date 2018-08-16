@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import EditFormPanel from '../EditFormPanel/EditFormPanel'
+import ContactDetailedInfo from '../ContactDetailedInfo/ContactDetailedInfo'
 
 class ContactsList extends Component {
 
@@ -33,9 +34,11 @@ class ContactsList extends Component {
           return (
             <div>
               <li key={contact.id}>
-                <p>{contact.firstName} {contact.lastName}</p>
-                <p>{contact.phoneNumber}</p>
-                <p>{contact.email}</p>
+                <ContactDetailedInfo firstName={contact.firstName}
+                                     lastName={contact.lastName}
+                                     phoneNumber={contact.phoneNumber}
+                                     email={contact.email}
+                />
                 <button onClick={() => this.removeContact(contact.id)}>Remove</button>
                 <button onClick={() => this.showEditPanel(contact.id)}>Edit</button>
                 <EditFormPanel key={contact.id}
