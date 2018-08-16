@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
-import EditForm from '../EditForm/EditForm'
+import EditFormPanel from '../EditFormPanel/EditFormPanel'
 
 class ContactsList extends Component {
 
   state = {
-    editVisibles: {}
+    editPanelsVisibility: {}
   };
 
-  showEditDiv = (id) => {
+  showEditPanel = (id) => {
     this.setState( prevState => ({
-      editVisibles: { ...prevState.editVisibles, [id]: !prevState.editVisibles[id] }
+      editPanelsVisibility: { ...prevState.editPanelsVisibility, [id]: !prevState.editPanelsVisibility[id] }
     }))
   };
 
@@ -28,7 +28,6 @@ class ContactsList extends Component {
 
     const contacts = this.props.retrievedContacts;
     return(
-
       <ul>
         {contacts.map(contact => {
           return (
@@ -38,19 +37,17 @@ class ContactsList extends Component {
                 <p>{contact.phoneNumber}</p>
                 <p>{contact.email}</p>
                 <button onClick={() => this.removeContact(contact.id)}>Remove</button>
-                <button onClick={() => this.showEditDiv(contact.id)}>Edit</button>
-                <div key={contact.id}
-                     className={`edit-form ${!this.state.editVisibles[contact.id] ? "unvisible" : "visible"}`}>
-                <p>Edit contacts form</p>
-                  <EditForm firstName={contact.firstName}
-                            lastName={contact.lastName}
-                            phoneNumber={contact.phoneNumber}
-                            email={contact.email}
-                            id={contact.id}
-                            getContacts={this.props.getContacts}
-                            showHideEditForm={this.showEditDiv}
-                  />
-                </div>
+                <button onClick={() => this.showEditPanel(contact.id)}>Edit</button>
+                <EditFormPanel key={contact.id}
+                               className={`edit-form ${!this.state.editPanelsVisibility[contact.id] ? "unvisible" : "visible"}`}
+                               contactId={contact.id}
+                               firstName={contact.firstName}
+                               lastName={contact.lastName}
+                               email={contact.email}
+                               phoneNumber={contact.phoneNumber}
+                               getContacts={this.props.getContacts}
+                               showEditPanel={this.showEditPanel}
+                />
               </li>
             </div>
           )

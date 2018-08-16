@@ -7,11 +7,6 @@ class App extends Component {
 
   state = {
     contacts: [],
-    firstName: '',
-    lastName: '',
-    phoneNumber: '',
-    email: '',
-    editVisibles: {}
   };
 
   getContacts = () => {

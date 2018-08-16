@@ -1,6 +1,6 @@
-import React, { Component} from 'react'
+import React, { Component } from 'react'
 
-class EditForm extends Component {
+class EditFormInputs extends Component {
 
   state = {
     contacts: [],
@@ -16,7 +16,7 @@ class EditForm extends Component {
 
   editContact = (event) => {
     event.preventDefault();
-    this.props.showHideEditForm(this.props.id);
+    this.props.showEditPanel(this.props.contactId);
     const updatedContact = {
       firstName: this.state.firstName,
       lastName: this.state.lastName,
@@ -81,4 +81,4 @@ class EditForm extends Component {
   }
 }
 
-export default EditForm
+export default EditFormInputs

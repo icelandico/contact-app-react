@@ -1,13 +1,6 @@
 {
   "contacts": [
     {
-      "firstName": "Shelia",
-      "lastName": "Melanie",
-      "phoneNumber": "123321456",
-      "email": "melanie@yahoo.com",
-      "id": 1
-    },
-    {
       "firstName": "John",
       "lastName": "Doe",
       "phoneNumber": "000555222",
@@ -36,11 +29,18 @@
       "id": 5
     },
     {
-      "firstName": "Lydia",
-      "lastName": "Davidson",
-      "phoneNumber": "891475431",
-      "email": "lydia@nyt.com",
-      "id": 6
+      "firstName": "Gregory",
+      "lastName": "Simpson",
+      "phoneNumber": "02589645",
+      "email": "greg@simp.com",
+      "id": 7
+    },
+    {
+      "firstName": "Margareth",
+      "lastName": "Thatcher",
+      "phoneNumber": "00015953",
+      "email": "noemail@uk.com",
+      "id": 8
     }
   ]
 }
