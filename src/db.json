@@ -1,3 +1,46 @@
 {
-  "contacts": []
+  "contacts": [
+    {
+      "firstName": "Shelia",
+      "lastName": "Melanie",
+      "phoneNumber": "123321456",
+      "email": "melanie@yahoo.com",
+      "id": 1
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "phoneNumber": "000555222",
+      "email": "johnny@web.com",
+      "id": 2
+    },
+    {
+      "firstName": "Vince",
+      "lastName": "Winter",
+      "phoneNumber": "88811222",
+      "email": "winter@winter.com",
+      "id": 3
+    },
+    {
+      "firstName": "Steven",
+      "lastName": "Gerrard",
+      "phoneNumber": "789654123",
+      "email": "stevieg@lfc.com",
+      "id": 4
+    },
+    {
+      "firstName": "Michael",
+      "lastName": "Adams",
+      "phoneNumber": "98756182",
+      "email": "adams@web.com",
+      "id": 5
+    },
+    {
+      "firstName": "Lydia",
+      "lastName": "Davidson",
+      "phoneNumber": "891475431",
+      "email": "lydia@nyt.com",
+      "id": 6
+    }
+  ]
 }

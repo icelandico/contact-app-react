@@ -39,8 +39,9 @@ class ContactsList extends Component {
                 <p>{contact.email}</p>
                 <button onClick={() => this.removeContact(contact.id)}>Remove</button>
                 <button onClick={() => this.showEditDiv(contact.id)}>Edit</button>
-                <div key={contact.id} className={`edit-form ${!this.state.editVisibles[contact.id] ? "unvisible" : "visible"}`}>
-                  <p>This is edit form</p>
+                <div key={contact.id}
+                     className={`edit-form ${!this.state.editVisibles[contact.id] ? "unvisible" : "visible"}`}>
+                <p>Edit contacts form</p>
                   <EditForm firstName={contact.firstName}
                             lastName={contact.lastName}
                             phoneNumber={contact.phoneNumber}
