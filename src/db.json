@@ -3,7 +3,7 @@
     {
       "firstName": "John",
       "lastName": "Doe",
-      "phoneNumber": "000555222",
+      "phoneNumber": "48123555111",
       "email": "johnny@web.com",
       "id": 2
     },
@@ -29,10 +29,10 @@
       "id": 5
     },
     {
-      "firstName": "Gregory",
-      "lastName": "Vonn",
+      "firstName": "Harry",
+      "lastName": "Potter",
       "phoneNumber": "02589645",
-      "email": "greg@simp.com",
+      "email": "harry@hogwart.com",
       "id": 7
     },
     {
@@ -55,6 +55,13 @@
       "phoneNumber": "85201479",
       "email": "theo@roose.com",
       "id": 10
+    },
+    {
+      "firstName": "Michael",
+      "lastName": "Jackson",
+      "phoneNumber": "555888111",
+      "email": "thriller@mike.com",
+      "id": 11
     }
   ]
 }
