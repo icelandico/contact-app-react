@@ -24,8 +24,6 @@ class ContactsList extends Component {
     ).then(this.props.getContacts)
   };
 
-
-
   render() {
 
     const contacts = this.props.retrievedContacts;
