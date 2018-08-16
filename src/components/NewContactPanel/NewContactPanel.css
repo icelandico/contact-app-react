@@ -1,0 +1,10 @@
+.form-container {
+    margin: 0 auto;
+}
+
+.newContactPanel > input {
+    padding: 5px;
+    display: block;
+    margin: 1% auto;
+
+}

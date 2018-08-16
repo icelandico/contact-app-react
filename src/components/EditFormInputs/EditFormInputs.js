@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './EditFormInputs.css'
 
 class EditFormInputs extends Component {
 
@@ -37,7 +38,7 @@ class EditFormInputs extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.editContact}>
+        <form className="edit-form" onSubmit={this.editContact}>
         <input
           type="text"
           placeholder="First Name"
@@ -74,7 +75,7 @@ class EditFormInputs extends Component {
           })}
         />
 
-        <button>Save Edited</button>
+        <button className="button-save-edits">Save Edited</button>
         </form>
       </div>
     )

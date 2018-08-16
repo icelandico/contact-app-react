@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './NewContactPanel.css'
 
 class NewContactPanel extends Component {
 
@@ -41,7 +42,7 @@ class NewContactPanel extends Component {
 
   render() {
     return (
-      <div>
+      <div className="form-container">
         <form className="newContactPanel" onSubmit={this.addContact}>
           <input
             type="text"

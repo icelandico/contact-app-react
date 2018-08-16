@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import EditFormPanel from '../EditFormPanel/EditFormPanel'
 import ContactDetailedInfo from '../ContactDetailedInfo/ContactDetailedInfo'
+import './ContactList.css'
 
 class ContactsList extends Component {
 
@@ -29,11 +30,11 @@ class ContactsList extends Component {
 
     const contacts = this.props.retrievedContacts;
     return(
-      <ul>
+      <ul className="contact-list">
         {contacts.map(contact => {
           return (
             <div>
-              <li key={contact.id}>
+              <li className="contact-item" key={contact.id}>
                 <ContactDetailedInfo firstName={contact.firstName}
                                      lastName={contact.lastName}
                                      phoneNumber={contact.phoneNumber}
