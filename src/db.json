@@ -30,7 +30,7 @@
     },
     {
       "firstName": "Gregory",
-      "lastName": "Simpson",
+      "lastName": "Vonn",
       "phoneNumber": "02589645",
       "email": "greg@simp.com",
       "id": 7
@@ -41,6 +41,13 @@
       "phoneNumber": "00015953",
       "email": "noemail@uk.com",
       "id": 8
+    },
+    {
+      "firstName": "Peter",
+      "lastName": "O'Neville",
+      "phoneNumber": "9812321",
+      "email": "pete@itnernet.com",
+      "id": 9
     }
   ]
 }

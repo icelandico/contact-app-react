@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22472384-71e0-4e33-bf5f-eba07ac4c101" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/EditFormPanel/EditFormPanel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ContactsList/ContactsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactsList/ContactsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EditForm/EditForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EditFormInputs/EditFormInputs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EditFormPanel/EditFormPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EditFormPanel/EditFormPanel.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,7 +20,7 @@
     <splitter split-orientation="horizontal" split-proportion="0.5062314">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/App/App.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="180">
@@ -35,11 +32,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ContactsList.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ContactsList.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/ContactsList/ContactsList.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="42" column="53" lean-forward="true" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+                <state relative-caret-position="440">
+                  <caret line="49" column="18" lean-forward="true" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
                   </folding>
@@ -75,8 +72,8 @@
           <file leaf-file-name="EditFormPanel.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/EditFormPanel/EditFormPanel.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="260">
-                  <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+                <state relative-caret-position="300">
+                  <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
                   </folding>
@@ -87,8 +84,8 @@
           <file leaf-file-name="EditFormInputs.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/EditFormInputs/EditFormInputs.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="18" selection-start-line="18" selection-end-line="18" />
+                <state relative-caret-position="660">
+                  <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
                 </state>
               </provider>
             </entry>
@@ -141,9 +138,9 @@
         <option value="$PROJECT_DIR$/src/components/EditForm/EditForm.js" />
         <option value="$PROJECT_DIR$/src/components/App/App.js" />
         <option value="$PROJECT_DIR$/src/components/App/EditFormPanel/EditFormPanel.js" />
+        <option value="$PROJECT_DIR$/src/components/EditFormInputs/EditFormInputs.js" />
         <option value="$PROJECT_DIR$/src/components/ContactsList/ContactsList.js" />
         <option value="$PROJECT_DIR$/src/components/EditFormPanel/EditFormPanel.js" />
-        <option value="$PROJECT_DIR$/src/components/EditFormInputs/EditFormInputs.js" />
       </list>
     </option>
   </component>
@@ -275,7 +272,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29847000" />
+    <option name="totallyTimeSpent" value="32240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -678,16 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="42" column="8" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/NewContactPanel/NewContactPanel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-440">
@@ -697,8 +684,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ContactsList/ContactsList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="42" column="53" lean-forward="true" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+        <state relative-caret-position="440">
+          <caret line="49" column="18" lean-forward="true" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
@@ -707,8 +694,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/EditFormPanel/EditFormPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        <state relative-caret-position="300">
+          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
@@ -717,8 +704,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/EditFormInputs/EditFormInputs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="660">
+          <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -39,7 +39,6 @@ class ContactsList extends Component {
                 <button onClick={() => this.removeContact(contact.id)}>Remove</button>
                 <button onClick={() => this.showEditPanel(contact.id)}>Edit</button>
                 <EditFormPanel key={contact.id}
-                               className={`edit-form ${!this.state.editPanelsVisibility[contact.id] ? "unvisible" : "visible"}`}
                                contactId={contact.id}
                                firstName={contact.firstName}
                                lastName={contact.lastName}
@@ -47,6 +46,7 @@ class ContactsList extends Component {
                                phoneNumber={contact.phoneNumber}
                                getContacts={this.props.getContacts}
                                showEditPanel={this.showEditPanel}
+                               editPanelVisibility={this.state.editPanelsVisibility}
                 />
               </li>
             </div>

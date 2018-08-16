@@ -5,8 +5,9 @@ class EditFormPanel extends Component {
 
   render() {
     return(
-      <div>
-        <p>Edit contacts form</p>
+      <div className={`edit-form ${!this.props.editPanelVisibility[this.props.contactId] ? "unvisible" : "visible"}`}>
+
+      <p>Edit contacts form</p>
         <EditFormInputs firstName={this.props.firstName}
                         lastName={this.props.lastName}
                         phoneNumber={this.props.phoneNumber}

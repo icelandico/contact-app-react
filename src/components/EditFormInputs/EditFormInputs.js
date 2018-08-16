@@ -24,7 +24,7 @@ class EditFormInputs extends Component {
       email: this.state.email
     };
     fetch(
-      'http://localhost:3000/contacts/' + this.props.id, {
+      'http://localhost:3000/contacts/' + this.props.contactId, {
         method: 'PATCH',
         body: JSON.stringify(updatedContact),
         headers: {
