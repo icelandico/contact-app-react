@@ -11,7 +11,7 @@ class EditForm extends Component {
   };
 
   componentDidMount() {
-    this.props.getContacts()
+    this.props.getContacts();
   }
 
   editContact = (event) => {

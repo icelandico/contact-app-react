@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import EditForm from '../EditForm/EditForm'
 import NewContactPanel from '../NewContactPanel/NewContactPanel'
+import ContactsList from "../ContactsList/ContactsList";
 
 class App extends Component {
 
@@ -37,57 +37,18 @@ class App extends Component {
   };
 
   componentDidMount() {
-    this.getContacts()
+    this.getContacts();
   }
-
-  removeContact = id => {
-    fetch(
-      `http://localhost:3000/contacts/` + id, {
-        method: 'DELETE',
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      }
-    ).then(this.getContacts)
-  };
-
-  showEditDiv = (id) => {
-    this.setState( prevState => ({
-      editVisibles: { ...prevState.editVisibles, [id]: !prevState.editVisibles[id] }
-    }))
-  };
 
   render() {
     return (
       <div className="App">
         <h1>Contact App</h1>
-        <NewContactPanel getContacts={this.getContacts()}/>
-        <ul>
-          {this.state.contacts.map(contact => {
-            return (
-              <div>
-                <li key={contact.id}>
-                  <p>{contact.firstName} {contact.lastName}</p>
-                  <p>{contact.phoneNumber}</p>
-                  <p>{contact.email}</p>
-                  <button onClick={() => this.removeContact(contact.id)}>Remove</button>
-                  <button onClick={() => this.showEditDiv(contact.id)}>Edit</button>
-                  <div key={contact.id} className={`edit-form ${!this.state.editVisibles[contact.id] ? "unvisible" : "visible"}`}>
-                    <p>This is edit form</p>
-                    <EditForm firstName={contact.firstName}
-                              lastName={contact.lastName}
-                              phoneNumber={contact.phoneNumber}
-                              email={contact.email}
-                              id={contact.id}
-                              getContacts={this.getContacts}
-                              showHideEditForm={this.showEditDiv}
-                    />
-                  </div>
-                </li>
-              </div>
-            )
-          })}
-        </ul>
+        <NewContactPanel getContacts={this.getContacts}/>
+        <ContactsList retrievedContacts={this.state.contacts}
+                      sortContacts={this.sortContacts}
+                      getContacts={this.getContacts}
+        />
       </div>
     );
   }
