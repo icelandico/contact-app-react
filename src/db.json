@@ -16,8 +16,8 @@
     },
     {
       "firstName": "Henryk",
-      "lastName": "Arcyważny",
-      "phoneNumber": "98123",
+      "lastName": "Ambaras",
+      "phoneNumber": "988521405",
       "email": "kaniek@mail.com",
       "id": 10
     },
@@ -29,9 +29,9 @@
       "id": 12
     },
     {
-      "firstName": "Edek",
-      "lastName": "Kulson",
-      "phoneNumber": "123",
+      "firstName": "Edward",
+      "lastName": "Niemowa",
+      "phoneNumber": "5855645871",
       "email": "edek@gmail.com",
       "id": 13
     },
@@ -44,17 +44,24 @@
     },
     {
       "firstName": "Halina",
-      "lastName": "Konownono",
+      "lastName": "Dziuba",
       "phoneNumber": "8881238123",
       "email": "kami@url.pl",
       "id": 16
     },
     {
-      "firstName": "Felek",
-      "lastName": "Zacibszuch",
-      "phoneNumber": "456789123",
+      "firstName": "Franciszek",
+      "lastName": "Walicki",
+      "phoneNumber": "123456789",
       "email": "pasiek@pasi.pl",
       "id": 17
+    },
+    {
+      "firstName": "Bogusław",
+      "lastName": "Wołoszański",
+      "phoneNumber": "555444111",
+      "email": "volos@ru.mail",
+      "id": 18
     }
   ]
 }
