@@ -1,5 +1,12 @@
 import React, { Component } from 'react'
-import './EditFormInputs.css'
+// import './EditFormInputs.css'
+import styled from 'styled-components';
+
+const Input = styled.input`
+    margin: 2% auto;
+    display: block;
+    max-width: 75%;
+    `;
 
 class EditFormInputs extends Component {
 
@@ -39,7 +46,7 @@ class EditFormInputs extends Component {
     return (
       <div>
         <form className="edit-form" onSubmit={this.editContact}>
-        <input
+        <Input
           type="text"
           placeholder="First Name"
           value={this.state.firstName}
@@ -48,7 +55,7 @@ class EditFormInputs extends Component {
           })}
         />
 
-        <input
+        <Input
           type="text"
           placeholder="Last Name"
           value={this.state.lastName}
@@ -57,7 +64,7 @@ class EditFormInputs extends Component {
           })}
         />
 
-        <input
+        <Input
           type="number"
           placeholder="Phone Number"
           value={this.state.phoneNumber}
@@ -66,7 +73,7 @@ class EditFormInputs extends Component {
           })}
         />
 
-        <input
+        <Input
           type="mail"
           placeholder="Email"
           value={this.state.email}

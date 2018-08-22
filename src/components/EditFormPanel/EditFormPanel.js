@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import EditFormInputs from '../EditFormInputs/EditFormInputs'
-import './EditFormPanel.css'
+import Input from '../EditFormInputs/EditFormInputs'
 
 class EditFormPanel extends Component {
 
@@ -8,7 +8,7 @@ class EditFormPanel extends Component {
     return(
       <div className={`edit-form ${!this.props.editPanelVisibility[this.props.contactId] ? "unvisible" : "visible"}`}>
       <p>Edit contacts form</p>
-        <EditFormInputs firstName={this.props.firstName}
+        <Input firstName={this.props.firstName}
                         lastName={this.props.lastName}
                         phoneNumber={this.props.phoneNumber}
                         email={this.props.email}
