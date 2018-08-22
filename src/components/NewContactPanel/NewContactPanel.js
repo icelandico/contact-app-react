@@ -1,5 +1,20 @@
 import React, { Component } from 'react'
+import styled from 'styled-components'
 import './NewContactPanel.css'
+
+const NewContactInput = styled.input`
+    padding: 5px;
+    display: block;
+    margin: 1% auto;
+`;
+
+const Button = styled.button`
+  padding: 1%;
+  margin: 0 1%;
+  min-width: 75px;
+  background: #7999a9;
+  border: none;
+`;
 
 class NewContactPanel extends Component {
 
@@ -44,7 +59,7 @@ class NewContactPanel extends Component {
     return (
       <div className="form-container">
         <form className="newContactPanel" onSubmit={this.addContact}>
-          <input
+          <NewContactInput
             type="text"
             placeholder="First Name"
             value={this.state.firstName}
@@ -53,7 +68,7 @@ class NewContactPanel extends Component {
             })}
           />
 
-          <input
+          <NewContactInput
             type="text"
             placeholder="Last Name"
             value={this.state.lastName}
@@ -62,7 +77,7 @@ class NewContactPanel extends Component {
             })}
           />
 
-          <input
+          <NewContactInput
             type="number"
             placeholder="Phone Number"
             value={this.state.phoneNumber}
@@ -71,7 +86,7 @@ class NewContactPanel extends Component {
             })}
           />
 
-          <input
+          <NewContactInput
             type="mail"
             placeholder="Email"
             value={this.state.email}
@@ -80,7 +95,7 @@ class NewContactPanel extends Component {
             })}
           />
 
-          <button>Add contact</button>
+          <Button>Add contact</Button>
         </form>
       </div>
     )
