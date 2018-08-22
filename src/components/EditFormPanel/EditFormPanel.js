@@ -1,12 +1,19 @@
 import React, { Component } from 'react'
-import EditFormInputs from '../EditFormInputs/EditFormInputs'
+import styled from 'styled-components';
 import Input from '../EditFormInputs/EditFormInputs'
+
+const EditPanel = styled.div`
+    background: #a7a7a7;
+    padding: 2%;
+    margin: 5%;
+    border-radius: 15px;
+`;
 
 class EditFormPanel extends Component {
 
   render() {
     return(
-      <div className={`edit-form ${!this.props.editPanelVisibility[this.props.contactId] ? "unvisible" : "visible"}`}>
+      <EditPanel className={`edit-form ${!this.props.editPanelVisibility[this.props.contactId] ? "unvisible" : "visible"}`}>
       <p>Edit contacts form</p>
         <Input firstName={this.props.firstName}
                         lastName={this.props.lastName}
@@ -16,7 +23,7 @@ class EditFormPanel extends Component {
                         getContacts={this.props.getContacts}
                         showEditPanel={this.props.showEditPanel}
         />
-      </div>
+      </EditPanel>
     )
   }
 }

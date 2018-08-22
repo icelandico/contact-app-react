@@ -1,7 +1,23 @@
 import React, { Component } from 'react'
-import EditFormPanel from '../EditFormPanel/EditFormPanel'
+import styled from 'styled-components'
 import ContactDetailedInfo from '../ContactDetailedInfo/ContactDetailedInfo'
 import './ContactList.css'
+import EditPanel from '../EditFormPanel/EditFormPanel'
+
+const ContactList = styled.ul`
+    margin: 0;
+    padding: 0;
+`;
+
+const ListItem = styled.li`
+    list-style: none;
+    padding: 2%;
+    background: #c4b7a6;
+    margin: 5% auto;
+    max-width: 30%;
+    border-radius: 15px;
+`;
+
 
 class ContactsList extends Component {
 
@@ -30,11 +46,11 @@ class ContactsList extends Component {
 
     const contacts = this.props.retrievedContacts;
     return(
-      <ul className="contact-list">
+      <ContactList className="contact-list">
         {contacts.map(contact => {
           return (
             <div>
-              <li className="contact-item" key={contact.id}>
+              <ListItem className="contact-item" key={contact.id}>
                 <ContactDetailedInfo firstName={contact.firstName}
                                      lastName={contact.lastName}
                                      phoneNumber={contact.phoneNumber}
@@ -42,7 +58,7 @@ class ContactsList extends Component {
                 />
                 <button onClick={() => this.removeContact(contact.id)}>Remove</button>
                 <button onClick={() => this.showEditPanel(contact.id)}>Edit</button>
-                <EditFormPanel key={contact.id}
+                <EditPanel key={contact.id}
                                contactId={contact.id}
                                firstName={contact.firstName}
                                lastName={contact.lastName}
@@ -52,11 +68,11 @@ class ContactsList extends Component {
                                showEditPanel={this.showEditPanel}
                                editPanelVisibility={this.state.editPanelsVisibility}
                 />
-              </li>
+              </ListItem>
             </div>
           )
         })}
-      </ul>
+      </ContactList>
     )
   }
 }
