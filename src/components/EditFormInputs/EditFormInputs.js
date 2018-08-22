@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// import './EditFormInputs.css'
 import styled from 'styled-components';
 
 const Input = styled.input`
@@ -7,6 +6,10 @@ const Input = styled.input`
     display: block;
     max-width: 75%;
     `;
+
+const SaveButton = styled.button`
+    margin-top: 5%;
+`;
 
 class EditFormInputs extends Component {
 
@@ -82,7 +85,7 @@ class EditFormInputs extends Component {
           })}
         />
 
-        <button className="button-save-edits">Save Edited</button>
+        <SaveButton className="button-save-edits">Save Edited</SaveButton>
         </form>
       </div>
     )
