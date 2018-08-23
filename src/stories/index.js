@@ -18,7 +18,7 @@ storiesOf('NewContactPanel', module)
      {story()}
    </div>
  ))
-.add('Different Style', () => <NewContactPanel />)
+ .add('Different Style', () => <NewContactPanel />);
 
 storiesOf('ContactDetailedInfo', module)
   .add('Default view', () => (
