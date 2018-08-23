@@ -6,6 +6,18 @@ import EditFormInputs from '../components/EditFormInputs/EditFormInputs'
 import EditFormPanel from '../components/EditFormPanel/EditFormPanel'
 import ContactsLists from '../components/ContactsList/ContactsList'
 
+const contacts = {
+  "contacts": [
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "phoneNumber": "48123555111",
+      "email": "johnny@web.com",
+      "id": 2
+    }
+  ]
+};
+
 storiesOf('NewContactPanel', module)
   .addDecorator(story => (
     <div style={{textAlign: 'center'}}>
@@ -22,17 +34,29 @@ storiesOf('NewContactPanel', module)
 
 storiesOf('ContactDetailedInfo', module)
   .add('Default view', () => (
-    <ContactDetailedInfo />
+    <ContactDetailedInfo contactId={1}
+                         firstName={"John"}
+                         lastName={"Doe"}
+                         email={"example@gmail.com"}
+                         phoneNumber={"500-600-700"}
+    />
   ));
 
 storiesOf('EditFormInputs', module)
   .add('Default view', () => (
-    <EditFormInputs />
+    <EditFormInputs firstName={"John"}
+                    lastName={"Doe"}
+                    phoneNumber={"500-600-700"}
+                    email={"example@gmail.com"}
+                    contactId={1}
+    />
   ));
 
 storiesOf('ContactsList', module)
   .add('Default view', () => (
-    <ContactsLists />
+    <ContactsLists retrievedContacts={this.state.contacts}
+                   sortContacts={this.sortContacts}
+                   getContacts={contacts}/>
   ));
 
 storiesOf('EditFormPanel', module)

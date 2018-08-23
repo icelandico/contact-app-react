@@ -9,7 +9,6 @@ class App extends Component {
     contacts: [],
   };
 
-
   getContacts = () => {
     fetch(`http://localhost:3000/contacts`)
       .then(results => {
@@ -43,7 +42,7 @@ class App extends Component {
       <div className="App">
         <h1>Contact App</h1>
         <NewContactPanel getContacts={this.getContacts}/>
-        <ContactList retrievedContacts={this.state.contacts}
+        <ContactList  retrievedContacts={this.state.contacts}
                       sortContacts={this.sortContacts}
                       getContacts={this.getContacts}
         />
