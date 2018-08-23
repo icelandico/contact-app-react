@@ -3,6 +3,8 @@ import { storiesOf } from '@storybook/react';
 import NewContactPanel from '../components/NewContactPanel/NewContactPanel'
 import ContactDetailedInfo from '../components/ContactDetailedInfo/ContactDetailedInfo'
 import EditFormInputs from '../components/EditFormInputs/EditFormInputs'
+import EditFormPanel from '../components/EditFormPanel/EditFormPanel'
+import ContactsLists from '../components/ContactsList/ContactsList'
 
 storiesOf('NewContactPanel', module)
   .add('Default view', () => (
@@ -19,6 +21,15 @@ storiesOf('EditFormInputs', module)
     <EditFormInputs />
   ));
 
+storiesOf('ContactsList', module)
+  .add('Default view', () => (
+    <ContactsLists />
+  ));
+
+storiesOf('EditFormPanel', module)
+  .add('Default view', () => (
+    <EditFormPanel />
+  ));
 
 
 
