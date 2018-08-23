@@ -9,6 +9,7 @@ class App extends Component {
     contacts: [],
   };
 
+
   getContacts = () => {
     fetch(`http://localhost:3000/contacts`)
       .then(results => {
@@ -19,6 +20,7 @@ class App extends Component {
         this.setState({
           contacts: contactList
         });
+        localStorage.setItem('contacts', JSON.stringify(this.state.contacts))
       });
   };
 
@@ -36,6 +38,7 @@ class App extends Component {
   }
 
   render() {
+
     return (
       <div className="App">
         <h1>Contact App</h1>

@@ -52,7 +52,7 @@ class NewContactPanel extends Component {
           'Content-type': 'application/json'
         }
       }
-    ).then(this.props.getContacts)
+    ).then(this.props.getContacts);
   };
 
   render() {
