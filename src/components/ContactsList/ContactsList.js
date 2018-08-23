@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import ContactDetailedInfo from '../ContactDetailedInfo/ContactDetailedInfo'
-import './ContactList.css'
 import EditPanel from '../EditFormPanel/EditFormPanel'
 
 const ContactList = styled.ul`
@@ -17,7 +16,6 @@ const ListItem = styled.li`
     max-width: 30%;
     border-radius: 15px;
 `;
-
 
 class ContactsList extends Component {
 
