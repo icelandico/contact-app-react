@@ -9,7 +9,7 @@ class App extends Component {
 
     return (
       <div>
-        <h1>Contact App</h1>
+        <h1>Choose Your destiny</h1>
         <Header />
         <Main />
       </div>

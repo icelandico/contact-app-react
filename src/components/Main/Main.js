@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Router, Route, Switch } from 'react-router-dom'
 import NewContactPanel from '../NewContactPanel/NewContactPanel'
 import ContactList from '../ContactsList/ContactsList'
 import './Main.css';
@@ -38,16 +39,30 @@ class Main extends Component {
 
   render() {
     return (
-      <div className="main">
-        <NewContactPanel getContacts={this.getContacts}/>
-        <ContactList  retrievedContacts={this.state.contacts}
-                      sortContacts={this.sortContacts}
-                      getContacts={this.getContacts}
-        />
-      </div>
+      <Switch>
+        <div className="main">
+          <Route exact path='/' render={() => 'Welcome to this App'} />
+          <Route path='/newContact'
+                 component={
+                   <NewContactPanel getContacts={this.getContacts}/>}
+
+          />
+          {/*<NewContactPanel getContacts={this.getContacts}/>*/}
+          <Route path='/contacts'
+                 component={
+                   <ContactList retrievedContacts={this.state.contacts}
+                                sortContacts={this.sortContacts}
+                                getContacts={this.getContacts}/>}
+          />
+
+          {/*<ContactList  retrievedContacts={this.state.contacts}*/}
+                        {/*sortContacts={this.sortContacts}*/}
+                        {/*getContacts={this.getContacts}*/}
+          {/*/>*/}
+        </div>
+      </Switch>
     )
   }
 }
 
 export default Main
-
