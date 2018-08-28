@@ -2,12 +2,14 @@
     text-align: center;
 }
 
-.main li {
-    list-style: none;
+.navigation-list {
+    margin: 0;
+    padding: 0;
 }
 
 .navigation-list > li {
-    margin: 2%;
+    margin: 2% auto;
+    list-style: none;
 }
 
 .unvisible {
