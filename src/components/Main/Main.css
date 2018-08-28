@@ -2,6 +2,14 @@
     text-align: center;
 }
 
+.main li {
+    list-style: none;
+}
+
+.navigation-list > li {
+    margin: 2%;
+}
+
 .unvisible {
     display: none;
 }

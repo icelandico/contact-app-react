@@ -6,6 +6,7 @@ import EditPanel from '../EditFormPanel/EditFormPanel'
 const ContactList = styled.ul`
     margin: 0;
     padding: 0;
+    text-align: center;
 `;
 
 const ListItem = styled.li`

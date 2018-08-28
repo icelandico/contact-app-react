@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route, Switch, Link } from 'react-router-dom'
+import { BrowserRouter, Route, Link } from 'react-router-dom'
 import NewContactPanel from '../NewContactPanel/NewContactPanel'
 import ContactList from '../ContactsList/ContactsList'
 import './Main.css';
@@ -39,18 +39,20 @@ class Main extends Component {
 
   render() {
     return (
-      <Switch>
-        <ul>
+      <BrowserRouter>
+        <div className="main">
+        <ul className="navigation-list">
           <li>
-            <Link to='/newContact'>Create new Contact</Link>
+            <Link to='/home'>Main Page</Link>
+          </li>
+          <li>
+            <Link to='/new'>Create new Contact</Link>
           </li>
           <li>
             <Link to='/contacts'>Show Contacts list</Link>
           </li>
         </ul>
-        <div className="main">
-          <Route exact path='/' render={() => 'Welcome to this App'} />
-          <Route path='/newContact' render={() => <NewContactPanel getContacts={this.getContacts}/>}
+          <Route path='/new' render={() => <NewContactPanel getContacts={this.getContacts}/>}
 
           />
           <Route path='/contacts' render={() =>
@@ -61,7 +63,7 @@ class Main extends Component {
           }
           />
         </div>
-      </Switch>
+      </BrowserRouter>
     )
   }
 }
