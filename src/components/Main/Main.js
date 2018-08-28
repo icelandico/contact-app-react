@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Router, Route, Switch } from 'react-router-dom'
+import { Route, Switch, Link } from 'react-router-dom'
 import NewContactPanel from '../NewContactPanel/NewContactPanel'
 import ContactList from '../ContactsList/ContactsList'
 import './Main.css';
@@ -40,25 +40,26 @@ class Main extends Component {
   render() {
     return (
       <Switch>
+        <ul>
+          <li>
+            <Link to='/newContact'>Create new Contact</Link>
+          </li>
+          <li>
+            <Link to='/contacts'>Show Contacts list</Link>
+          </li>
+        </ul>
         <div className="main">
           <Route exact path='/' render={() => 'Welcome to this App'} />
-          <Route path='/newContact'
-                 component={
-                   <NewContactPanel getContacts={this.getContacts}/>}
+          <Route path='/newContact' render={() => <NewContactPanel getContacts={this.getContacts}/>}
 
           />
-          {/*<NewContactPanel getContacts={this.getContacts}/>*/}
-          <Route path='/contacts'
-                 component={
-                   <ContactList retrievedContacts={this.state.contacts}
-                                sortContacts={this.sortContacts}
-                                getContacts={this.getContacts}/>}
+          <Route path='/contacts' render={() =>
+            <ContactList retrievedContacts={this.state.contacts}
+                         sortContacts={this.sortContacts}
+                         getContacts={this.getContacts}
+            />
+          }
           />
-
-          {/*<ContactList  retrievedContacts={this.state.contacts}*/}
-                        {/*sortContacts={this.sortContacts}*/}
-                        {/*getContacts={this.getContacts}*/}
-          {/*/>*/}
         </div>
       </Switch>
     )
