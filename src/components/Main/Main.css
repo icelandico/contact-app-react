@@ -1,0 +1,11 @@
+.main {
+    text-align: center;
+}
+
+.unvisible {
+    display: none;
+}
+
+.visible {
+    display: block;
+}

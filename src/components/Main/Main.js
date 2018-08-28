@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import NewContactPanel from '../NewContactPanel/NewContactPanel'
 import ContactList from '../ContactsList/ContactsList'
+import './Main.css';
 
 class Main extends Component {
 
@@ -37,7 +38,7 @@ class Main extends Component {
 
   render() {
     return (
-      <div>
+      <div className="main">
         <NewContactPanel getContacts={this.getContacts}/>
         <ContactList  retrievedContacts={this.state.contacts}
                       sortContacts={this.sortContacts}
