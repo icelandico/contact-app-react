@@ -92,10 +92,13 @@ storiesOf('ContactsList', module)
 
 storiesOf('EditFormPanel', module)
   .add('Default view', () => (
-    <EditFormPanel firstName={exampleData.lastName}
+    <EditFormPanel firstName={exampleData.firstName}
                    lastName={exampleData.lastName}
-                   email={exampleData.lastName}
-                   phoneNumber={exampleData.lastName}
+                   email={exampleData.email}
+                   phoneNumber={exampleData.phoneNumber}
+                   getContacts={getContacts}
+                   showEditPanel={this.showEditPanel}
+                   editPanelVisibility={true}
     />
   ));
 
