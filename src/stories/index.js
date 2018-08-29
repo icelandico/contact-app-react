@@ -54,7 +54,10 @@ storiesOf('NewContactPanel', module)
   ))
  .add('Default', () => <NewContactPanel />)
  .addDecorator(story => (
-   <div style={{background: '#4b5d6d', padding: '15px', width: '30%'}}>
+   <div style={{background: '#4b5d6d',
+                padding: '15px',
+                width: '30%'}}
+   >
      {story()}
    </div>
  ))
@@ -72,13 +75,16 @@ storiesOf('ContactDetailedInfo', module)
 
 storiesOf('EditFormInputs', module)
   .add('Default view', () => (
-    <EditFormInputs contactId={exampleData.contactId}
-                    firstName={exampleData.firstName}
-                    lastName={exampleData.lastName}
-                    email={exampleData.email}
-                    phoneNumber={exampleData.phoneNumber}
-                    getContacts={getContacts}
-    />
+    <div style={{textAlign: 'center'}}>
+      <EditFormInputs contactId={exampleData.contactId}
+                      firstName={exampleData.firstName}
+                      lastName={exampleData.lastName}
+                      email={exampleData.email}
+                      phoneNumber={exampleData.phoneNumber}
+                      getContacts={getContacts}
+      />
+    </div>
+
   ));
 
 storiesOf('ContactsList', module)
@@ -92,13 +98,17 @@ storiesOf('ContactsList', module)
 
 storiesOf('EditFormPanel', module)
   .add('Default view', () => (
-    <EditFormPanel firstName={exampleData.firstName}
-                   lastName={exampleData.lastName}
-                   email={exampleData.email}
-                   phoneNumber={exampleData.phoneNumber}
-                   getContacts={getContacts}
-                   showEditPanel={this.showEditPanel}
-                   editPanelVisibility={true}
-    />
-  ));
+    <div style={{textAlign: 'center'}}>
+      <EditFormPanel firstName={exampleData.firstName}
+                     lastName={exampleData.lastName}
+                     email={exampleData.email}
+                     phoneNumber={exampleData.phoneNumber}
+                     getContacts={getContacts}
+                     showEditPanel={this.showEditPanel}
+                     editPanelVisibility={true}
+      />
+    </div>
+  )
+);
+
 
