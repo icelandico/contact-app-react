@@ -58,14 +58,14 @@ class ContactsList extends Component {
                 <button onClick={() => this.removeContact(contact.id)}>Remove</button>
                 <button onClick={() => this.showEditPanel(contact.id)}>Edit</button>
                 <EditPanel key={contact.id}
-                               contactId={contact.id}
-                               firstName={contact.firstName}
-                               lastName={contact.lastName}
-                               email={contact.email}
-                               phoneNumber={contact.phoneNumber}
-                               getContacts={this.props.getContacts}
-                               showEditPanel={this.showEditPanel}
-                               editPanelVisibility={this.state.editPanelsVisibility}
+                           contactId={contact.id}
+                           firstName={contact.firstName}
+                           lastName={contact.lastName}
+                           email={contact.email}
+                           phoneNumber={contact.phoneNumber}
+                           getContacts={this.props.getContacts}
+                           showEditPanel={this.showEditPanel}
+                           editPanelVisibility={this.state.editPanelsVisibility}
                 />
               </ListItem>
             </div>
